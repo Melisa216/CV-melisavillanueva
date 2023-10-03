@@ -68,7 +68,12 @@ header{
   align-items: center;
   height: 100vh;
 }
-
+.contenedorindex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 .contenido{
   display: flex;
   align-items: center;
@@ -102,6 +107,7 @@ header{
   margin-left: 50px;
   font-size: 40px;
   font-family: 'Times New Roman', Times, serif;
+  color: #FFF;
 }
 .lineacontenedor{
   margin-top: 10px;
@@ -116,51 +122,36 @@ width: 100%;
 }
 
 .contenedorinfo{
-    width: 814px;
-    height: auto;
-    border-radius: 62px;
-    background: rgba(243, 243, 243, 0.50);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    padding: 50px;
-    flex: 1;
-    text-align: left;
-    border: 4px solid transparent;
-    transition: border-color 0.3s ease;
-    position: relative;
+  width: auto;
+  border-radius: 62px;
+  background: rgba(243, 243, 243, 0.50);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: 4px solid transparent;
+  transition: border-color 0.3s ease;
+  padding: 20px;
 }
+.contenedorinfo p{
+  font-size: 1.6rem;
+  margin: 2rem 0 0.2rem;
+}
+.contenedorimg img{
+  width: 35vw;
+}
+.contenedorimg{
+  margin-top: 200px;
+}
+.contenedorimg img{
+  max-width: 380px;
+}
+
 .contenedorinfo:hover{
   box-shadow: 0 .1rem 2rem var(--shadow-color);
   transform: scale(1.02);
   border-color: #63492B;
 
 }
-.contenedorinfo h1{
-  margin-bottom: 40px;
-  font-size: 50px;
-}
-.contenedorinfo h2{
-  font-size: 40px;
-}
-.contenedorinfo p{
-  font-size: 35px;
-}
-.edad{
-  margin-bottom: 30px;
-}
-
-.localidad{
-  margin-bottom: 30px;
-}
-.nacionalidad{
-  margin-bottom: 30px;
-}
-
-.mail{
-  margin-bottom: 30px;
-}
 .contenedorlenguaje{
-  width: 1055px;
-  height: 184px;
+  width: auto;
   margin: 20px;
   border-radius: 105px;
   background: rgba(243, 243, 243, 0.40);
@@ -219,9 +210,7 @@ width: 100%;
 
 }
 .contenedorsoftware{
-  width: 1080px;
-  height: 215px;
-  flex-shrink: 0;
+  width: auto;
   margin: 20px;
   border-radius: 105px;
   background: rgba(243, 243, 243, 0.40);
@@ -238,9 +227,7 @@ width: 100%;
   border-color: #63492B;
 }
 .contenedoridioma{
-  width: 1080px;
-  height: 163px;
-  flex-shrink: 0;
+  width: auto;
   margin: 20px;
   border-radius: 100px;
   background: rgba(243, 243, 243, 0.40);
@@ -276,6 +263,9 @@ width: 100%;
   font-family: 'Times New Roman', Times, serif;
   margin-top: 30px;
 }
+.lineadatos{
+  width: 100%;
+}
 .contenedorgeneral{
   align-items: center;
   justify-items: center;
@@ -283,8 +273,7 @@ width: 100%;
   display: flex;
 }
 .infoestudio{
-  width: 1094px;
-  height: 289px;
+  width: auto;
   border-radius: 144.5px;
   margin: 50px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
@@ -299,11 +288,7 @@ width: 100%;
   transform: scale(1.02);
   border-color: #63492B
 }
-.infoestudio{
-  text-align: left;
-  padding: 50px;
-  margin-bottom: 30px;
-}
+
 .contenedorinfoestudios h2{
   font-size: 40px;
 }
@@ -312,57 +297,183 @@ width: 100%;
 }
 .secundariainfo{
   display: flex;
-  align-items: center;
 }
 .lineaestudio{
   width: 100%;
   margin: 0 10px;
 }
-.instituto,
-.bachiller{
-  margin: 0;
-}
+
 .universidadinfo{
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.carrera{
-margin-right: 10px;
-margin-left: 400px;
-}
+
 .instituto{
   margin-right: 350px;
 }
 
-@media (max-width: 576px){
-  .contenedorgeneral{
-    flex-direction: column;
+@media (max-width: 873px) {
+  html {
+      font-size: 40%;
   }
-  .encabezado{
-    flex-direction: column;
 
+   
+}
+
+@media (max-width: 873px) {
+  .contenedor {
+      max-width: 50rem;
   }
-  .infoestudio{
+}
+@media (max-width: 800px){
+  .navbar{
+      position: absolute;
+      top: 0%;
+      left: 0;
+      width: 100%;
+      padding: 1rem 3%;
+  }
+  
+  .navbar a {
+      font-size: 13px;
+  }
+  .contenido {
+    display: flex;
     flex-direction: column;
+    align-items: center; 
+    position: relative;
   }
-.contenedorlenguaje{
-  flex-direction: column;
-}
-.contenedorsoftware{
-  flex-direction: column;
-}
-.contenedoridioma{
-  flex-direction: column;
-}
-.infoestudio{
-  flex-basis: 100%;
-}
-.contenedor{
-  flex-direction: column;
-}
-.navbar {
+  
+  .imgcv{
+    max-width: 100%;
+    width: 220px;
+    height: 224px;
+    margin-right: 0;
+    
+  }
+ .encabezado{
+  text-align: center;
+  margin-top: 20px; 
+  
+ }
+  .contenedor{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-right: 250px;
+  }
+  .contenedorimg img{
+    display: none;
+  }
+  .encabezado h1 {
+      font-size: 5rem;
+  }
+
+  .contenedorinfo h1 {
+      font-size: 30px;
+  }
+
+  .contenedorinfo p {
+      font-size: 20px;
+      text-align: left;
+  }
+
+  .conocimientos h2,
+  .estudios {
+      margin-bottom: 3rem;
+  }
+
+  .contenedorgeneral {
+      margin-left: -10px;
+  }
+
+  .contenedorinfoestudios{
+      margin-left: -10px;
+  }
+
+  .contenedorlenguaje {
+      max-width: 100%;
+      height: 180px;
+  }
+  .contenedorlenguaje h2{
+    font-size: 20px;
+   }
+   .contenedorlenguaje p{
+    font-size: 13px;
+  
+   }
+   .contenedorsoftware p{
+    font-size: 13px;
+  
+   }
+  .contenedorsoftware {
+    max-width: 100%;
+    height: 150px;
+ }
+ .contenedorsoftware p{
+  font-size: 15px;
+
+ }
+ .contenedorsoftware h2{
   font-size: 20px;
+ }
+ .contenedorsoftware p{
+  font-size: 15px;
+ }
+ .contenedoridioma {
+  max-width: 100%;
+  height: 110px;
+  width: 450px;
+ }
+ .contenedoridioma h2{
+  font-size: 20px;
+ }
+ .contenedoridioma p{
+  font-size: 15px;
+ }
+ .lineatitulo{
+  width:100%;
+ }
+ .titulo{
+  font-size: 30px;
+ }
+ footer{
+  font-size: 15px;
+ }
+ .contenedorinfoestudios{
+  max-width: 100%;
+ }
+ .contenedorinfoestudios p{
+  font-size: 15px;
+ }
+ .contenedorinfoestudios h2{
+  font-size: 25px;
+ }
+ .secundariainfo {
+  display: block;
+
+ }
+ .universidadinfo{
+  display: block;
+ }
+ .instituto{
+  white-space: nowrap;
+ }
+.infolenguaje{
+  display: block;
+}
+.infosoftware p{
+  display: block;
+  margin: 0;
+}
+
+.infoidioma{
+  display: block;
+  white-space: nowrap;
+}
+.infoidioma img{
+  display: none;
 }
 }
 
